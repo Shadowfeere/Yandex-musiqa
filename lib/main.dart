@@ -8,7 +8,6 @@ void main() {
   runApp(
     MultiBlocProvider(
       providers: [
-        BlocProvider(create: (context) => VideoCubit()),
         BlocProvider(create: (context) => FileCubit()),
       ],
       child: const MainApp(),
